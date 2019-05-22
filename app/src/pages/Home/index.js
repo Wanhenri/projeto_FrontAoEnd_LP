@@ -1,5 +1,7 @@
 import React from 'react';
 
-const Home =() => <h1
+import TitleCollab from "../../objects/TitleCollab";
 
-export default ;
+const Home =() => <TitleCollab>do Front ao End</TitleCollab>;
+;
+export default Home;

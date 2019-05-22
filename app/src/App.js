@@ -1,9 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Home from "./pages/Home";
 
-class App extends Component {
-  render() {
-    return <h1>Do Front Ao End</h1>
-  };
-}
+const App = () => <Home />;
 
 export default App;
