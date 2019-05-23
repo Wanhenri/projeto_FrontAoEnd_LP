@@ -3,9 +3,11 @@ import React from 'react';
 import { Wrapper } from './styles';
 
 import SubtitleCollab from '../../objects/SubtitleCollab';
+import TextCollab from '../../objects/TextCollab';
+
 import TitleDofrontaoend from "../../components/TitleDofrontaoend";
 import VideoDofrontaoend from '../../components/VideoDofrontaoend';
-import TextCollab from '../../objects/TextCollab';
+import FormLead from '../../components/FormLead';
 
  const Home = () => (
     <Wrapper>
@@ -19,6 +21,8 @@ import TextCollab from '../../objects/TextCollab';
         <TextCollab>
             Quer receber novidades da próxima turma, só colocar seu email abaixo.
         </TextCollab>
+
+        <FormLead />
     </Wrapper>
  );
 
