@@ -2,7 +2,8 @@ import { createGlobalStyle} from "styled-components";
 
 const Size = createGlobalStyle `
     :root {
-        --size-small:14px;
+        --radius-small: 3px;
+        --size-small:16px;
     }
 
 `
