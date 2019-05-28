@@ -6,6 +6,9 @@ const BtnCollab = styled.input.attrs({
 
 })`
     width:130px;
+    border-radius: var(--radius-small);
+    color:var(--color-first);
+    font-weight:bold;
 `;
 
 export default BtnCollab;
