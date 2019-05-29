@@ -13,6 +13,7 @@ const BtnCollab = styled.input.attrs({
     transition:background-color 200ms linear;
     cursor: pointer;
 
+    &focus,
     &:hover {
         background-color:var(--color-first);
         color:var(--color-zero);
