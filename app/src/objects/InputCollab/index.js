@@ -10,10 +10,17 @@ const InputCollab = styled.input`
     padding-right: var(--spacing-small);
     color:var(--color-zero);
     font-size:var(--size-small);
+    border:1px solid transparent;
+    transition: border-color 200ms linear;
 
     &::placeholder {
         color: var(--color-zero);
         font-weight:bold;
+    }
+
+    &:focus,
+    &:hover {
+        border:1px solid var(--color-third);
     }
 `;
 
