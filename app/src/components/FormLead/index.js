@@ -9,7 +9,7 @@ const FormLead = () => (
         <InputCollab placeholder="Nome"/>
         <InputCollab placeholder="Email"/>
 
-        <BtnCollab content="Enviar"/>
+        <BtnCollab content="Receber"/>
     </Form>
 );
 
