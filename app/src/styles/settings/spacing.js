@@ -2,14 +2,14 @@ import { createGlobalStyle } from "styled-components";
 
 const Spacing = createGlobalStyle`
     :root {
-        --spacing-base:10px;
-        --spacing-small:calc(1 *--spacing-base);
-        --spacing-big: calc(4 * --spacing-base);
+        --spacing-small:1rem;
+        --spacing-big: 4rem;
     }    
 
     @media (max-height:700px){
         :root{
-        --spacing-base:8px;
+        --spacing-base:0.5rem;
+        --spacing-big: 2rem;
 
         }
     }
