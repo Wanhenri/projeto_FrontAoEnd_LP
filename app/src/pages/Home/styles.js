@@ -10,7 +10,8 @@ export const Section = styled.section`
     display:flex;
     flex-direction: column;
     align-items:center;
-    width:60%; 
+    width:60%;
+    min-width: 545px; 
     
 
     &> ${SubtitleCollab},
@@ -20,6 +21,7 @@ export const Section = styled.section`
 
     &> ${SubtitleCollab} {
         text-align:center;
+        width: 500px;
     }
 
     &> ${TextCollab}{
@@ -28,7 +30,7 @@ export const Section = styled.section`
     }
 
     &> ${Form}{
-        max-width: 545px;
+        min-width: 545px;
     }
 `;
 
