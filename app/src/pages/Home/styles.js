@@ -1,16 +1,17 @@
 import styled from "styled-components";
 
 import SubtitleCollab from "../../objects/SubtitleCollab";
-
 import TextCollab from "../../objects/TextCollab";
+import VideoDofrontaoend from "../../components/VideoDofrontaoend";
 
-import VideoDofrontaoend from "../../components/VideoDofrontaoend"
+import { Form } from "../../components/FormLead/styles.js";
 
 export const Section = styled.section`
-    width:550px;    
-    margin-left:auto;
-    margin-right:auto;
-    text-align:center;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    width:60%; 
+    
 
     &> ${SubtitleCollab},
     &> ${VideoDofrontaoend} {
@@ -18,14 +19,16 @@ export const Section = styled.section`
     }  
 
     &> ${SubtitleCollab} {
-        width:90%;
-        margin-left: auto;
-        margin-right: auto;
+        text-align:center;
     }
 
     &> ${TextCollab}{
         text-align:left;
         margin-bottom: var(--spacing-small);
+    }
+
+    &> ${Form}{
+        max-width: 545px;
     }
 `;
 
