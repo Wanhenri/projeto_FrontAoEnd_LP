@@ -9,6 +9,7 @@ const InputCollab = styled.input`
     padding-left: var(--spacing-small);
     padding-right: var(--spacing-small);
     color:var(--color-zero);
+    font-size:var(--size-small);
 
     &::placeholder {
         color: var(--color-zero);
