@@ -25,7 +25,6 @@ export const Section = styled.section`
     }
 
     &> ${TextCollab}{
-        text-align:left;
         margin-bottom: var(--spacing-small);
     }
 
