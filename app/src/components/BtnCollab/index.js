@@ -15,11 +15,17 @@ const BtnCollab = styled.input.attrs({
     font-size:var(--size-small);
     cursor: pointer;
     will-change:transform;
-    transition: transform 100ms linear;
+    transition: transform 100ms linear, box-shadow 100ms linear;
+    box-shadow: 0px 0px 0px var(--color-base);
 
     &focus,
     &:hover {
         transform:translateY(-3px);
+        box-shadow: 0px 2px 4px var(--color-base);
+    }
+
+    &:active {
+        transform:translateY(-1px);
     }
 `;
 
