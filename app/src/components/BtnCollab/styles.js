@@ -4,18 +4,24 @@ export const Button = styled.button.attrs({
     type: "submit"
 })`
     position: relative;
+    background-color:transparent;
 
     &:after {
         content: " ";
         display:block;
         background-color:var(--color-zero);
-        width: 545px;
+        width: 130px;
         height: 40px;
+        transform-origin:right;
+        transform: scaleX(0.27); 
+        transform:scaleX(4.08);
     }
 `;
 
 export const Text = styled.span`
-    
+    position: absolute;
+    width:100%;
+    test-align:center;
 `;
 
 const BtnCollab = styled.input.attrs({
