@@ -1,5 +1,23 @@
 import styled, {css} from "styled-components";
 
+export const Button = styled.button.attrs({
+    type: "submit"
+})`
+    position: relative;
+
+    &:after {
+        content: " ";
+        display:block;
+        background-color:var(--color-zero);
+        width: 545px;
+        height: 40px;
+    }
+`;
+
+export const Text = styled.span`
+    
+`;
+
 const BtnCollab = styled.input.attrs({
     type: "submit", 
     value: ({content}) => content
@@ -36,5 +54,3 @@ const BtnCollab = styled.input.attrs({
         `
     }
 `;
-
-export default BtnCollab;
