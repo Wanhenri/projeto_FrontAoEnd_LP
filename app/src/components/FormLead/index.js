@@ -20,13 +20,14 @@ const FormLead = () => {
             <InputCollab placeholder="Email"/>
 
             <BtnCollab 
-                content="Receber" 
                 onClick={event => {
                         event.preventDefault();
                         setLoading(true)
                     }
                 } 
-                loading={loading}/>
+                loading={loading}
+            >
+                Receber
         </Form>
     );
 };
