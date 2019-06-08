@@ -1,11 +1,9 @@
 import React from "react";
 
-import {Button, Text} from "./styles";
+import {Button} from "./styles";
 
-const BtnCollab = ({content}) => (
-    <Button>
-        <Text>{content}</Text>
-    </Button>
+const BtnCollab = props => (
+    <Button {...props} />
 );
 
 export default BtnCollab;
