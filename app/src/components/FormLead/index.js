@@ -9,7 +9,8 @@ import TextCollab from '../../objects/TextCollab';
 
 const FormLead = () => {
     const [loading, setLoading] = useState(false)
-    
+    const [content, setContent] = useState("Receber")
+
     return(
         <Form>
             <TextCollab>
@@ -22,12 +23,15 @@ const FormLead = () => {
             <BtnCollab 
                 onClick={event => {
                         event.preventDefault();
-                        setLoading(true)
+                        setLoading(true);
+                        setContent("Enviando");
                     }
                 } 
-                loading={loading}
+                loading={loading} 
             >
-                Receber
+                {content}
+            </BtnCollab>
+
         </Form>
     );
 };
