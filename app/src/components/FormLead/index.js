@@ -24,7 +24,7 @@ const FormLead = () => {
                 onClick={event => {
                         event.preventDefault();
                         setLoading(true);
-                        setContent("Enviando");
+                        setContent("Enviando..");
                     }
                 } 
                 loading={loading} 
