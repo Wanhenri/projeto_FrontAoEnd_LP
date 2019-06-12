@@ -1,7 +1,9 @@
 import React from "react";
 
+import { Header }  from "./styles";
+
 const HeaderCollab = () => (
-    <h1>Header</h1>
+    <Header></Header>
 );
 
 export default HeaderCollab;
