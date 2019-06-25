@@ -35,6 +35,7 @@ export const Section = styled.section`
 
 export const Wrapper = styled.main `
     background-color: var(--color-first);
+    padding-left:80px;
     height:100vh;
     display:flex;
     justify-content:center;

@@ -4,6 +4,7 @@ import LogoAvatar from "../../objects/LogoAvatar";
 
 export const Header = styled.header`
     background-color: var(--color-zero);
+    box-sizing:border-box;
     padding-top:20px;
     width: 80px;    
     height: 100vh;
@@ -17,7 +18,8 @@ export const Header = styled.header`
     justify-content:center;
 
     &> ${LogoAvatar}{
-        
+     position: absolute;
+     top:20px;   
     }
 `;
 
