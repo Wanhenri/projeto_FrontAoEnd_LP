@@ -2,11 +2,12 @@ import styled from "styled-components";
 
 import LogoAvatar from "../../objects/LogoAvatar";
 
+import { Content } from "../NavigationCollab/styles";
+
 export const Header = styled.header`
     background-color: var(--color-zero);
-    box-sizing:border-box;
-    padding-top:20px;
-    width: 80px;    
+    padding:20px 20px 0;
+    width: 40px;    
     height: 100vh;
     position: absolute;
     z-index:1;
@@ -14,12 +15,22 @@ export const Header = styled.header`
     left:0;
     display:flex;
     flex-direction:column;
-    align-items: center;
     justify-content:center;
+    transition: width 300ms linear;
+    cursor:pointer;
+
+    &:hover {
+        width:300px;
+    }
 
     &> ${LogoAvatar}{
-     position: absolute;
-     top:20px;   
+        position: absolute;
+        top:20px; 
+        width:40px;  
+    }
+
+    & ${Content}{
+        display:${({hover}) => hover ? "inline" : "none"};
     }
 `;
 
