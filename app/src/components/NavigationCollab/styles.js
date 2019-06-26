@@ -11,5 +11,12 @@ export const Item = styled.li`
         margin-bottom: var(--spacing-medium);
     }
 `;
+export const Number = styled.span`
+    display:inline-block;
+    width:1.2ch;
+    text-align: center;
+`;
 
-export const Content = styled.strong``;
+export const Content = styled.strong`
+    font-weight: normal;
+`;
