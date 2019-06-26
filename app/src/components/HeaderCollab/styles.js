@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import LogoAvatar from "../../objects/LogoAvatar";
 
-import { Content } from "../NavigationCollab/styles";
+import { Navigation, Content } from "../NavigationCollab/styles";
 
 export const Header = styled.header`
     background-color: var(--color-zero);
@@ -29,8 +29,16 @@ export const Header = styled.header`
         width:40px;  
     }
 
+    &> ${Navigation}{
+        padding-left:11px;
+        width:500px;
+    }
+
     & ${Content}{
-        display:${({hover}) => hover ? "inline" : "none"};
+        transition: opacity 200ms linear;
+        transition-duration:${({hover}) => hover ? "200ms" : "100ms"};
+        transition-delay:${({hover}) => hover && "100ms"};
+        opacity:${({hover}) => hover ? "1" : "0"};
     }
 `;
 
