@@ -11,3 +11,5 @@ export const Item = styled.li`
         margin-bottom: var(--spacing-medium);
     }
 `;
+
+export const Content = styled.strong``;
