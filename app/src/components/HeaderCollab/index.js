@@ -2,8 +2,7 @@ import React, { useState } from "react";
 
 import { Header }  from "./styles";
 
-import LogoAvatar from "../../objects/LogoAvatar";
-
+import LogoCollab from "../../objects/LogoCollab";
 import NavigationCollab from "../NavigationCollab";
 
 
@@ -26,7 +25,9 @@ const HeaderCollab = () => {
 
     return (
         <Header onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} hover={isHovered}>
-            <LogoAvatar />
+
+        <LogoCollab />
+        
             <NavigationCollab items={ items } hover={isHovered} />
         </Header>
     )
