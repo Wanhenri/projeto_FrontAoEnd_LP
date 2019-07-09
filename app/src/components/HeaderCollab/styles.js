@@ -1,6 +1,5 @@
 import styled from "styled-components";
-
-import AvatarCollab from "../../objects/AvatarCollab";
+import { Figure } from "../../objects/LogoCollab/styles";
 import CollabCode from "../../objects/CollabCode";
 
 import { Navigation, Content } from "../NavigationCollab/styles";
@@ -29,23 +28,28 @@ export const Header = styled.header`
         width:500px;
     }
 
-    &> ${AvatarCollab} {
-
+    &> ${ Figure }{
+        position: absolute;
+        top: var(--spacing-medium);
+        width: 500px;
     }
 
-    & ${CollabCode}{
-        transition: opacity 200ms linear;
-        transition-duration:${({hover}) => hover ? "200ms" : "100ms"};
-        transition-delay:${({hover}) => hover && "100ms"};
-        opacity:${({hover}) => hover ? "1" : "0"};
-    }
-
-
+    & ${CollabCode},
     & ${Content}{
-        transition: opacity 200ms linear;
-        transition-duration:${({hover}) => hover ? "200ms" : "100ms"};
-        transition-delay:${({hover}) => hover && "100ms"};
-        opacity:${({hover}) => hover ? "1" : "0"};
+        transition: opacity 100ms linear;
+        opacity: 0;
     }
+
+    
+    &:hover ${CollabCode},
+    &:hover ${Content}{
+        transition-duration: 200ms;
+        transition-delay: 150ms;
+        opacity: 1;
+    }
+
+
+
+
 `;
 

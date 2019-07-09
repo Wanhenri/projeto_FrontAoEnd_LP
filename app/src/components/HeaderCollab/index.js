@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { Header }  from "./styles";
 
@@ -8,7 +8,7 @@ import NavigationCollab from "../NavigationCollab";
 
 
 const HeaderCollab = () => {
-    const [isHovered, setIsHovered] = useState(false);    
+    
     const items = [
             "Como funciona?",
             "Git e GitHub", 
@@ -19,16 +19,12 @@ const HeaderCollab = () => {
             "User Experience"
     ];
 
-    const handleMouseEnter  = () => setIsHovered(true);
-
-    const handleMouseLeave  = () => setIsHovered(false);
-
     return (
-        <Header onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} hover={isHovered}>
+        <Header>
 
         <LogoCollab />
         
-            <NavigationCollab items={ items } hover={isHovered} />
+            <NavigationCollab items={ items }  />
         </Header>
     )
 };
