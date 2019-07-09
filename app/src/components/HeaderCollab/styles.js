@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
-import LogoAvatar from "../../objects/LogoAvatar";
+import AvatarCollab from "../../objects/AvatarCollab";
+import CollabCode from "../../objects/CollabCode";
 
 import { Navigation, Content } from "../NavigationCollab/styles";
 
@@ -23,16 +24,22 @@ export const Header = styled.header`
         width:300px;
     }
 
-    &> ${LogoAvatar}{
-        position: absolute;
-        top:20px; 
-        width:40px;  
-    }
-
     &> ${Navigation}{
         padding-left:11px;
         width:500px;
     }
+
+    &> ${AvatarCollab} {
+
+    }
+
+    & ${CollabCode}{
+        transition: opacity 200ms linear;
+        transition-duration:${({hover}) => hover ? "200ms" : "100ms"};
+        transition-delay:${({hover}) => hover && "100ms"};
+        opacity:${({hover}) => hover ? "1" : "0"};
+    }
+
 
     & ${Content}{
         transition: opacity 200ms linear;
