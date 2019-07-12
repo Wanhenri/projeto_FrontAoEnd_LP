@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Wrapper, Section } from './styles';
+import { Wrapper, Lead, Menu } from './styles';
 
 import SubtitleCollab from '../../objects/SubtitleCollab';
 
@@ -17,7 +17,7 @@ import FormLead from '../../components/FormLead';
 
         <HeaderCollab />
 
-        <Section>
+        <Lead>
             <TitleDofrontaoend>do Front ao End</TitleDofrontaoend>
             <SubtitleCollab>
                  Um guia completo para quem quer se tornar um Desenvolvedor Front End
@@ -26,7 +26,9 @@ import FormLead from '../../components/FormLead';
             <VideoDofrontaoend />
 
             <FormLead />
-        </Section>
+        </Lead>
+
+        <Menu></Menu>
     </Wrapper>
  );
 
