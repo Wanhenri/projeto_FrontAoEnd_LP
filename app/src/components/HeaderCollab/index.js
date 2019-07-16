@@ -7,7 +7,7 @@ import NavigationCollab from "../NavigationCollab";
 
 
 
-const HeaderCollab = () => {
+const HeaderCollab = (props) => {
     
     const items = [
             "Como funciona?",
@@ -24,7 +24,7 @@ const HeaderCollab = () => {
 
         <LogoCollab />
         
-            <NavigationCollab items={ items }  />
+            <NavigationCollab   { ...props} items={ items }  />
         </Header>
     )
 };
