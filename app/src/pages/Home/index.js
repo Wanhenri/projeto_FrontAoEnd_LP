@@ -1,22 +1,25 @@
 import React from 'react';
 
-import { Wrapper,  Menu } from './styles';
+import { Main } from './styles';
 
 
 import HeaderCollab from "../../components/HeaderCollab";
 
 import Lead from "../Lead";
+import Menu from "../Menu";
 
 
- const Home = () => (
-    <Wrapper>
+ const Home = () => {
+     return(
+        <Main>
 
-        <HeaderCollab />
-        <Lead />
+            <HeaderCollab onclick={() => console.log("FOI")}  />
+            <Lead />
+            <Menu />
 
-        <Menu></Menu>
-    </Wrapper>
- );
+        </Main>
+    )
+};
 
  export default Home;
 
