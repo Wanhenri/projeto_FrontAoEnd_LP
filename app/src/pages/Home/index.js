@@ -1,32 +1,18 @@
 import React from 'react';
 
-import { Wrapper, Lead, Menu } from './styles';
+import { Wrapper,  Menu } from './styles';
 
-import SubtitleCollab from '../../objects/SubtitleCollab';
 
 import HeaderCollab from "../../components/HeaderCollab";
 
-import TitleDofrontaoend from "../../components/TitleDofrontaoend";
-import VideoDofrontaoend from '../../components/VideoDofrontaoend';
-import FormLead from '../../components/FormLead';
-
+import Lead from "../Lead";
 
 
  const Home = () => (
     <Wrapper>
 
         <HeaderCollab />
-
-        <Lead>
-            <TitleDofrontaoend>do Front ao End</TitleDofrontaoend>
-            <SubtitleCollab>
-                 Um guia completo para quem quer se tornar um Desenvolvedor Front End
-            </SubtitleCollab>
-
-            <VideoDofrontaoend />
-
-            <FormLead />
-        </Lead>
+        <Lead />
 
         <Menu></Menu>
     </Wrapper>
