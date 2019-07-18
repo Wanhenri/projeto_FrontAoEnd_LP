@@ -4,10 +4,12 @@ import CollabCode from "../../objects/CollabCode";
 
 import { Navigation, Content } from "../NavigationCollab/styles";
 
+const widthActive = "300px";
+
 export const Header = styled.header`
     background-color: var(--color-zero);
     padding:20px 20px 0;
-    width: 40px;    
+    width: ${({active}) => active ? widthActive : "40px"};    
     height: 100vh;
     position: fixed;
     z-index:1;
@@ -20,7 +22,7 @@ export const Header = styled.header`
     cursor:pointer;
 
     &:hover {
-        width:300px;
+        width: ${widthActive};
     }
 
     &> ${Navigation}{
@@ -37,7 +39,7 @@ export const Header = styled.header`
     & ${CollabCode},
     & ${Content}{
         transition: opacity 100ms linear;
-        opacity: 0;
+        opacity: ${({active}) => active ? 1 : 0};
     }
 
     
