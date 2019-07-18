@@ -1,37 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 
-import { Main } from './styles';
+import { Main } from './styles'
 
+import HeaderCollab from '../../components/HeaderCollab'
 
-import HeaderCollab from "../../components/HeaderCollab";
+import Lead from '../Lead'
+import Menu from '../Menu'
 
-import Lead from "../Lead";
-import Menu from "../Menu";
+const Home = () => {
+    const [active, setActive] = useState()
 
+    const handleClick = key => setActive(key)
 
- const Home = () => {
-    const [active, setActive] = useState();
-    
-    const handleClick = key => setActive(key);
-    
-    return(
+    return (
         <Main>
-
             <HeaderCollab handleClick={handleClick} itemActive={active} />
 
             <Lead />
             <Menu />
-
         </Main>
     )
-};
+}
 
- export default Home;
+export default Home
 
 // class Home extends Component {
 //     state = {  }
-//     render() { 
-//         return ( 
+//     render() {
+//         return (
 //             <div>
 //                 <TitleDofrontaoend>do Front ao End</TitleDofrontaoend>
 //                 <SubtitleCollab>Um guia completo para quem quer se tornar um Desenvolvedor Front End</SubtitleCollab>
@@ -39,5 +35,5 @@ import Menu from "../Menu";
 //          );
 //     }
 // }
-//  
+//
 // export default Home;

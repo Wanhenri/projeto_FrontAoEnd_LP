@@ -1,6 +1,6 @@
 import React from "react";
 
-import {Navigation, Item,  Number, Content } from "./styles"
+import {Navigation, Item,  Number, Content } from './styles'
 
 const NavigationCollab = ({handleClick, items, itemActive}) => (
     <Navigation>
@@ -14,4 +14,4 @@ const NavigationCollab = ({handleClick, items, itemActive}) => (
     </Navigation>
 );
 
-export default NavigationCollab;
+export default NavigationCollab
