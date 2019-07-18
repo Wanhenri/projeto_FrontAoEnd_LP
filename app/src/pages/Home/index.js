@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Main } from './styles';
 
@@ -10,10 +10,15 @@ import Menu from "../Menu";
 
 
  const Home = () => {
-     return(
+    const [active, setActive] = useState();
+    
+    const handleClick = key => setActive(key);
+    
+    return(
         <Main>
 
-            <HeaderCollab onclick={() => console.log("FOI")}  />
+            <HeaderCollab handleClick={handleClick} itemActive={active} />
+
             <Lead />
             <Menu />
 
