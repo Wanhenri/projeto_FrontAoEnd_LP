@@ -20,11 +20,10 @@ const HeaderCollab = (props) => {
     ];
 
     return (
-        <Header>
-
-        <LogoCollab />
+        <Header active={props.itemActive >= 0}>
+            <LogoCollab />
         
-            <NavigationCollab   { ...props} items={ items }  />
+            <NavigationCollab   {...props} items={ items }  />
         </Header>
     )
 };
