@@ -1,9 +1,12 @@
-import React from "react";
+import React from 'react'
 
-import { Section } from "./styles";
+import { Section } from './styles'
+import HeaderContent from '../../components/HeaderContent'
 
 const Menu = () => (
-    <Section id="0"/>
-);
+    <Section id="0">
+        <HeaderContent />
+    </Section>
+)
 
-export default Menu;
+export default Menu
