@@ -5,9 +5,11 @@ import CollabCode from '../../objects/CollabCode'
 import { Navigation, Content } from '../NavigationCollab/styles'
 
 export const Header = styled.header`
+    box-sizing: border-box;
     background-color: var(--color-zero);
     padding: 20px 20px 0;
-    width: ${({ active }) => (active ? 'var(--size-active-menu)' : '40px')};
+    width: ${({ active }) =>
+        active ? 'var(--size-active-menu)' : 'var(--spacing-menu)'};
     height: 100vh;
     position: fixed;
     z-index: 1;
@@ -18,22 +20,20 @@ export const Header = styled.header`
     justify-content: center;
     transition: width 300ms linear;
     cursor: pointer;
-    ${({ active }) => active && 'box-sizing: border-box'};
 
     &:hover {
-        box-sizing: border-box;
-        width: ${'var(--size-active-menu)'};
+        width: var(--size-active-menu);
     }
 
     & > ${Navigation} {
         padding-left: 11px;
-        width: 340px;
+        width: var(--size-active-menu);
     }
 
     & > ${Figure} {
         position: absolute;
         top: var(--spacing-medium);
-        width: 340px;
+        width: var(--size-active-menu);
     }
 
     & ${CollabCode}, & ${Content} {
