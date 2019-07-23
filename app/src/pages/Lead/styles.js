@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 import SubtitleCollab from '../../objects/SubtitleCollab'
-import TextCollab from '../../objects/TextCollab'
 import VideoDofrontaoend from '../../components/VideoDofrontaoend'
 import { Form } from '../../components/FormLead/styles'
 
@@ -21,10 +20,6 @@ export const Section = styled.section`
         width: 500px;
     }
 
-    & > ${TextCollab} {
-        margin-bottom: var(--spacing-small);
-    }
-
     & > ${Form} {
         min-width: 545px;
     }
@@ -36,4 +31,5 @@ export const Wrapper = styled.div`
     align-items: center;
     height: 100vh;
     background-color: var(--color-first);
+    padding-left: var(--size-menu);
 `
