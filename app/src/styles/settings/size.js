@@ -1,7 +1,6 @@
-import { createGlobalStyle} from "styled-components";
+import { createGlobalStyle } from 'styled-components'
 
-
-const Size = createGlobalStyle `
+const Size = createGlobalStyle`
     :root {
         --radius-small: 4px;
 
@@ -11,6 +10,9 @@ const Size = createGlobalStyle `
         --size-half-big: 2rem;
         --size-big:2.4rem;
         --size-very-big:5rem;
+        
+        --size-menu: 80px;
+        --size-active-menu: 340px;
     }
 
     @media (max-height:700px) {
@@ -18,7 +20,6 @@ const Size = createGlobalStyle `
             --size-base:9.8px;
         }
     }
-`;
+`
 
-export default Size;
-
+export default Size
