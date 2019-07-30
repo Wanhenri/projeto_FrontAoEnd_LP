@@ -7,14 +7,11 @@ import SubtitleCollab from '../../objects/SubtitleCollab'
 
 import BtnCollab from '../BtnCollab'
 
-const HeaderContent = () => (
+const HeaderContent = ({ title, subtitle }) => (
     <Header>
         <BtnCollab>Inscrever-se</BtnCollab>
-        <TitleCollab>Como funciona o curso?</TitleCollab>
-        <SubtitleCollab>
-            Esta ementa não define a ordem cronologica do curso, apenas separa
-            em topicos para facilitar a leitura.
-        </SubtitleCollab>
+        <TitleCollab>{title}</TitleCollab>
+        <SubtitleCollab>{subtitle}</SubtitleCollab>
     </Header>
 )
 
