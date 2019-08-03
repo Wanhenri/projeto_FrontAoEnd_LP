@@ -18,6 +18,7 @@ export const Section = styled.section`
     & > ${SubtitleCollab} {
         text-align: center;
         width: 500px;
+        color: var(--color-zero);
     }
 
     & > ${Form} {
