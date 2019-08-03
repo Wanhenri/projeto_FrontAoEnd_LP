@@ -1,9 +1,10 @@
 import React from 'react'
 
 import { Section } from './styles'
-import HeaderContent from '../../components/HeaderContent'
 
+import HeaderContent from '../../components/HeaderContent'
 import ListContent from '../../components/ListContent'
+import VideoCollab from '../../objects/VideoCollab'
 
 const items = [
     { number: 1, content: 'Informar' },
@@ -21,6 +22,7 @@ const Menu = () => (
             conhecer no video ao lado!"
         />
 
+        <VideoCollab />
         <ListContent items={items} />
     </Section>
 )
