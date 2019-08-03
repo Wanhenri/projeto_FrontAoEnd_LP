@@ -11,6 +11,7 @@ export const Form = styled.form`
 
     & > ${TextCollab} {
         margin-bottom: var(--spacing-small);
+        color: var(--color-zero);
     }
 
     & > ${InputCollab} {
