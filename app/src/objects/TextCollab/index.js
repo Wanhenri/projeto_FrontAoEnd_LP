@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-const TextCollab = styled.p `
-    color:var(--color-zero);
+const TextCollab = styled.p`
+    color: var(--color-bse-light);
     font-size: var(--size-small);
-`;
+`
 
-export default TextCollab;
+export default TextCollab
