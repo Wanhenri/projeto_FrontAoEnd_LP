@@ -5,6 +5,7 @@ const Spacing = createGlobalStyle`
         --spacing-small:1rem;
         --spacing-medium: 2rem;
         --spacing-big: 4rem;
+        --spacing-very-big: 5rem;
 
         --spacing-over-big: 120px;
         
