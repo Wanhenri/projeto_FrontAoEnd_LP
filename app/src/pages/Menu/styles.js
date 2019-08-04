@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 
-import { Video } from '../../objects/VideoCollab/styles'
 import TextCollab from '../../objects/TextCollab'
 
 import { Header } from '../../components/HeaderContent/styles'
@@ -11,6 +10,8 @@ export const Section = styled.section`
     height: 100vh;
     background-color: var(--color-third);
     padding-left: var(--size-active-menu);
+    transition: opacity 400ms linear;
+    opacity: ${({ active }) => (active ? '1' : '0')};
 
     & > ${VideoWrapper} {
         float: right;
